@@ -4,7 +4,7 @@ from bs4 import BeautifulSoup
 url = "https://rozetka.com.ua/ua/sport-i-uvlecheniya/c4627893/"
 response_text = ""
 
-response = requests.get(url) # comment
+response = requests.get(url)
 if response.ok == True:
     response_text = response.text
 

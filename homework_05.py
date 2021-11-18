@@ -4,7 +4,7 @@ up_str = low_str.title()
 print(up_str)
 
 #2
-a = ["John", "Marta", "James", "Amanda", "Marianna"] # comment
+a = ["John", "Marta", "James", "Amanda", "Marianna"]
 print("***" + "names" + "****************")
 print(a[-1])
 print(f'  {a[-2]}')
