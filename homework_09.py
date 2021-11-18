@@ -1,5 +1,5 @@
 def arithmetic(a:float, b:float, operation:str)-> float or str:
-    if operation == "+": # comment
+    if operation == "+":
         x = a + b
         return x
     elif operation == "-":
