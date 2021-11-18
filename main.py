@@ -1,3 +1,6 @@
-import random
-a = random.randint(1, 100)
-print(a)
+import requests
+
+link = "https://lms.ithillel.ua/"
+
+response = requests.get(link)
+print(response)
