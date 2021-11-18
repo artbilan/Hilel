@@ -9,5 +9,5 @@ if response.ok:
     response = response.text
     with open("link.html", "w", encoding="utf8") as file:
         file.write(response)
-soup = BeautifulSoup(response, "lxml") # объект супа
+soup = BeautifulSoup(response, "lxml") # объект суп
 print(soup)

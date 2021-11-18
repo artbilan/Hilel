@@ -2,7 +2,7 @@
 import requests
 from bs4 import BeautifulSoup
 
-url = "https://rozetka.com.ua/ua/sport-i-uvlecheniya/c4627893/"
+url = "https://rozetka.com.ua/ua/sport-i-uvlecheniya/c4627893/" # comment
 response_text = ""
 
 response = requests.get(url)
