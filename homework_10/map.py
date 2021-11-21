@@ -6,6 +6,5 @@ def new_map(update_string: str, other_list: list) -> list:
 
 
 names = ["John", "Robert", "Marta"]
-
 new_li = new_map("Hello", names)
 print(new_li)
