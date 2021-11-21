@@ -1,11 +1,26 @@
-number = [1, 2, 3, 4, 5, 6, 7, 8]
+number = [5, 10, 20]
 
-def new_reduce(x, operand):
+def new_reduce(some_list: list, operand: str)-> str:
+    a = 0
+    if operand == "-":
+        for i in some_list:
+            if a == 0:
+                a = some_list[0]
+            a = a - i
+    elif operand == "+":
+        for i in some_list:
+            a = a + i
+    elif operand == "*":
+        if a == 0:
+            a = 1
+            for i in some_list:
+                a = a * i
+    elif operand == "/":
+        for i in some_list:
+            a = a / i
+    return a
 
-a = 0
 
-for i in number:
-    if a == 0:
-        a = number[0]
-    a = a - i
-print(a)
+
+cc = new_reduce(number, "/")
+print(cc)
