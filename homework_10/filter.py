@@ -1,11 +1,11 @@
 def new_filter(number: int, number_list: list, smaller=False) -> list:
     new_list = []
-    if smaller == False:
+    if smaller is False:
         for i in number_list:
             if i > number:
                 new_list.append(i)
         return new_list
-    elif smaller == True:
+    elif smaller is True:
         for i in number_list:
             if i < number:
                 new_list.append(i)
