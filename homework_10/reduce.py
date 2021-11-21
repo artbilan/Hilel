@@ -15,12 +15,9 @@ def new_reduce(some_list: list, operand: str)-> str:
             a = 1
             for i in some_list:
                 a = a * i
-    elif operand == "/":
-        for i in some_list:
-            a = a / i
     return a
 
 
 
-cc = new_reduce(number, "/")
+cc = new_reduce(number, "-")
 print(cc)
