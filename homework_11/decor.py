@@ -13,5 +13,7 @@ def smart_divide(func: Callable) -> Callable:
 def div(a: int, b: int) -> str:
     print(f'result is {a/b}')
 
+
 div(9, 13)
+
 
