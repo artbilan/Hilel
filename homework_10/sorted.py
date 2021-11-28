@@ -1,18 +1,6 @@
-def new_sorted(x: list, reverse=False) -> list:
-    if reverse is False:
-        for i in range(len(x)-1):
-            for i2 in range(len(x)-1-i):
-                if x[i2] > x[i2+1]:
-                    x[i2], x[i2+1] = x[i2+1], x[i2]
-    elif reverse is True:
-        for i in range(len(x)-1):
-            for i2 in range(len(x)-1-i):
-                if x[i2] > x[i2+1]:
-                    x[i2], x[i2+1] = x[i2+1], x[i2]
-                    x.reverse()
-    return x
+from functools import reduce
+from typing import Callable
 
+number = [-5, 1, 2, 3, 0]
 
-numbers = [1, 0, 5, -10, 50, -100]
-new_numbers = new_sorted(numbers, reverse=False)
-print(new_numbers)
+print(reduce(lambda arg1, arg2: arg1 if arg1 > arg2 else arg2, number))
