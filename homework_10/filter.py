@@ -9,7 +9,7 @@ def new_filter(func: Callable, li: list) -> list:
     return new_list
 
 
-number = [-7, 6, 0, 2, 100, 49]
+number = [-7, 6, 0, 2, 100, 47]
 
 cc = new_filter(lambda x: x > 5, number)
 print(cc)

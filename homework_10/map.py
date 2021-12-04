@@ -5,6 +5,6 @@ def new_map(update_string: str, other_list: list) -> list:
     return new_list
 
 
-names = ["John", "Robert", "Marta"]
+names = ["John", "Robert", "Mike"]
 new_li = new_map("Hello", names)
 print(new_li)
