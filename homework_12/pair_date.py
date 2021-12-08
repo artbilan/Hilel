@@ -1,7 +1,6 @@
 from datetime import datetime, timedelta
 
 
-
 def paired_days(finish_date):
     days = abs((datetime.now() - datetime.strptime(finish_date, '%d.%m.%Y')).days)
     for i in range(days):
