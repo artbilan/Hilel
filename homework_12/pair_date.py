@@ -11,7 +11,6 @@ def paired_days(finish_date):
             print(new_date)
 
 
-
 finish_date = "31.12.2021"
 
 paired_days(finish_date)
