@@ -6,6 +6,7 @@ def func(args, li):
    else:
        raise IndexError("Index out of range")
 
+
 li = [1, 2, 3, 4, 5, 6, 7, 8, 9]
 
 func(10, li)
