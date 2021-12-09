@@ -10,7 +10,6 @@ cx = float(input("Enter coordinate x of dot C: "))
 cy = float(input("Enter coordinate y of dot C: "))
 
 # длина сторон
-
 ab = math.sqrt((ax - bx) ** 2 + (ay - by) ** 2)
 ac = math.sqrt((ax - cx) ** 2 + (ay - cy) ** 2)
 bc = math.sqrt((bx - cx) ** 2 + (by - cy) ** 2)
