@@ -1,15 +1,14 @@
 from datetime import datetime, timedelta
 
 
-def paired_days(finish_date):
-    days = abs((datetime.now() - datetime.strptime(finish_date, '%d.%m.%Y')).days)
-    for i in range(days):
-        day = datetime.today() + timedelta(i)
-        new_date = datetime.strftime(day, "%d.%m.%y")
-        if int(datetime.strftime(day, "%d")) % 2 == 0:
-            print(new_date)
+def paired_days():
+    start_day = datetime.today().date() - timedelta(datetime.today().day-1)
+    for i in range(31):
+        date = start_day + timedelta(i)
+        if date.month == datetime.now().month:
+            if int(date.day) % 2 == 0:
+                date = datetime.strftime(date, "%d.%m.%y")
+                print(date)
 
 
-finish_date = "31.12.2021"
-
-paired_days(finish_date)
+paired_days()
