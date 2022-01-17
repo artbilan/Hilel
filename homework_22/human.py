@@ -33,5 +33,7 @@ class Human:
     def change_gender(self, gender):
         self.__gender = self.__validate_gender(gender)
 
-    def return_age(self):
+    @property
+    def age(self):
         return self.__age
+
