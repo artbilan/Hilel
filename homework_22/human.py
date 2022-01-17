@@ -1,7 +1,7 @@
 
 
 class Human:
-    def __init__(self, name, age, gender):
+    def __init__(self, name: str, age: int, gender: str):
         self.__name = name
         self.__age = age
         self.__gender = gender
@@ -15,7 +15,7 @@ class Human:
         return self.__gender
 
     @staticmethod
-    def __validate_gender(gender):
+    def __validate_gender(gender: str):
         if gender not in ["male", "female"]:
             raise Exception("Not supported gender")
         else:
@@ -24,13 +24,13 @@ class Human:
     def grow(self):
         self.__age += 1
 
-    def change_name(self, name):
+    def change_name(self, name: str):
         if name != self.__name:
             self.__name = name
         else:
             raise Exception("Provided name is same as current")
 
-    def change_gender(self, gender):
+    def change_gender(self, gender: str):
         self.__gender = self.__validate_gender(gender)
 
     @property
